@@ -1,0 +1,38 @@
+/* Container to allow horizontal scrolling on small screens */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 16px 0;
+}
+
+.responsive-table {
+  width: 100%;
+  min-width: 600px; /* Ensures the table doesn't shrink too much */
+}
+
+.mat-header-cell, .mat-cell {
+  padding: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .mat-header-cell, .mat-cell {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .responsive-table {
+    min-width: 480px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mat-header-cell, .mat-cell {
+    padding: 2px;
+    font-size: 10px;
+  }
+
+  .responsive-table {
+    min-width: 300px;
+  }
+}

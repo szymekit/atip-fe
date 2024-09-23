@@ -1,0 +1,27 @@
+/* Ensure the dialog adapts to smaller screens */
+.mat-dialog-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  .mat-dialog-container {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  .mat-form-field {
+    width: 100%;
+  }
+
+  .mat-dialog-actions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mat-dialog-actions button {
+    width: 100%;
+    margin: 4px 0;
+  }
+}
